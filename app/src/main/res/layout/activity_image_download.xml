@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context="br.com.sample.threadsapp.activities.ImageDownloadActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exemplo runOnUiThread" />
+
+    <Button
+        android:id="@+id/b_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baixar Imagem"
+        android:textAllCaps="false"
+        android:onClick="imageDownload" />
+
+    <Button
+        android:id="@+id/b_download_async_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baixar Imagem com AsyncTask"
+        android:textAllCaps="false"
+        android:onClick="imageDownloadAsyncTask" />
+
+    <ImageView
+        android:id="@+id/iv_downloaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
